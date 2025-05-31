@@ -1,0 +1,177 @@
+$light-pink: #fdedf5;
+$dark-pink: #cc307e;
+$light-gray: #4b4847;
+$primary-color: #ff4aa0;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 62.5%;
+}
+
+.india-weekend {
+  .hero-section {
+    .hero-image {
+      aspect-ratio: 16 / 9;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    .cover-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      aspect-ratio: 16 / 9;
+      z-index: 1; // Ensure the cover image is behind other content
+    }
+  }
+  .nma-section {
+    background-color: $light-pink;
+    padding: 100px 0;
+    .nma-img {
+      aspect-ratio: 1;
+      height: auto;
+      width: 100%;
+      object-fit: cover;
+    }
+    .text-container {
+      height: 100%;
+      background: #fff;
+      padding: 5rem 0;
+      position: relative;
+      .text-row {
+        row-gap: 2.5rem;
+        padding: 0 4rem;
+
+        .above-text-line {
+          position: relative;
+          left: 50%;
+          top: 0;
+          transform: translate(-50%, 0%);
+          height: 2px;
+          width: 100px;
+          background-color: $dark-pink;
+        }
+        .first-text {
+          margin: 0;
+          padding: 0;
+          margin-top: 1.5rem;
+          font-size: 3rem;
+          text-align: center;
+          font-weight: 500;
+          line-height: 150%;
+          color: $light-gray;
+        }
+        .second-text {
+          margin: 0;
+          padding: 0;
+          font-size: 2rem;
+          line-height: 140%;
+          color: $light-gray;
+        }
+        .third-text {
+          margin: 0;
+          padding: 0;
+          font-size: 1.8rem;
+          line-height: 150%;
+          text-align: center;
+        }
+        .fourth-text {
+          margin: 0;
+          padding: 0;
+          text-align: center;
+          font-size: 1.8rem;
+          line-height: 150%;
+          font-style: italic;
+        }
+      }
+    }
+  }
+  .nmacc-nw-video-section {
+    padding: 10rem 0;
+    .text-up {
+      position: relative;
+      height: 2px;
+      width: 100px;
+      background-color: $dark-pink;
+    }
+    .nmacc-nw-video-title {
+      margin: 0;
+      padding: 0;
+      font-size: 3rem;
+      color: $light-gray;
+      font-weight: 500;
+      margin-top: 1.5rem;
+    }
+    .nmacc-nw-video {
+      margin-top: 6rem;
+      aspect-ratio: 16 / 9;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    .nmacc-nw-video-body-text {
+      margin: 0;
+      padding: 0;
+      font-size: 2.4rem;
+      line-height: 150%;
+      color: $light-gray;
+      margin-top: 6rem;
+      strong {
+        font-size: inherit;
+      }
+    }
+    .nmacc-nw-video-body-button {
+      margin: 0;
+      padding: 0;
+      margin-top: 2.5rem;
+      font-size: 1.8rem;
+      outline: none;
+      border: none;
+      background: none;
+      text-decoration: underline;
+    }
+  }
+  .tgib-section {
+    background-color: $light-pink;
+    padding: 10rem 0;
+    .text-up {
+      position: relative;
+      height: 2px;
+      width: 100px;
+      background-color: $dark-pink;
+    }
+    .tgib-title {
+      margin: 0;
+      padding: 0;
+      font-size: 3rem;
+      color: $light-gray;
+      font-weight: 500;
+      margin-top: 1.5rem;
+      padding-bottom: 8.9rem;
+    }
+    .tgib-section-section-1 {
+      background-color: $primary-color;
+      position: relative;
+      padding: 8.9rem 0 7.6rem;
+      .tgib-section-close-button{
+        outline: none;
+        background: none;
+        border: none;
+        position: absolute;
+        right: 2rem;
+        top: 2rem;
+      }
+      p {
+        color: #fff;
+        margin: 0 5rem;
+        font-size: 1.8rem;
+      }
+    }
+  }
+}

@@ -7,7 +7,7 @@ $primary-color: #ff4aa0;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 62.5%;
 }
 
@@ -159,7 +159,7 @@ $primary-color: #ff4aa0;
       background-color: $primary-color;
       position: relative;
       padding: 8.9rem 0 7.6rem;
-      .tgib-section-close-button{
+      .tgib-section-close-button {
         outline: none;
         background: none;
         border: none;
@@ -172,6 +172,297 @@ $primary-color: #ff4aa0;
         margin: 0 5rem;
         font-size: 1.8rem;
       }
+    }
+    .tgib-section-section-2 {
+      position: relative;
+      margin-top: 2rem;
+      aspect-ratio: 10/3;
+      .festval-image-bg {
+        z-index: 1;
+        aspect-ratio: 10/3;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+      }
+      .text-container {
+        padding: 4rem;
+        background: $primary-color;
+        background: linear-gradient(
+          90deg,
+          $primary-color 0%,
+          rgba($primary-color, 0) 60%
+        );
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        .tc-title {
+          margin: 0;
+          padding: 0;
+          font-weight: 800;
+          font-size: 4rem;
+          line-height: 120%;
+          color: #fff;
+        }
+        .tc-description {
+          margin: 0;
+          padding: 0;
+          font-size: 1.8rem;
+          line-height: 140%;
+          color: #fff;
+        }
+        .tc-arrow-button {
+          margin-top: 1rem;
+          outline: none;
+          border: none;
+          background: none;
+        }
+      }
+    }
+    .tgib-section-section-3 {
+      margin-top: 2rem;
+      .card-1 {
+        position: relative;
+        aspect-ratio: 10/3;
+        .festval-image-bg {
+          z-index: 1;
+          aspect-ratio: 10/3;
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+          object-position: center;
+        }
+        .text-container {
+          padding: 4rem;
+          background: $primary-color;
+          background: linear-gradient(
+            90deg,
+            $primary-color 0%,
+            rgba($primary-color, 0) 60%
+          );
+          z-index: 2;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          .tc-title {
+            margin: 0;
+            padding: 0;
+            font-weight: 800;
+            font-size: 4rem;
+            line-height: 120%;
+            color: #fff;
+          }
+          .tc-description {
+            margin: 0;
+            padding: 0;
+            font-size: 1.8rem;
+            line-height: 140%;
+            color: #fff;
+          }
+          .tc-arrow-button {
+            margin-top: 1rem;
+            outline: none;
+            border: none;
+            background: none;
+          }
+        }
+      }
+      .card-2 {
+        position: relative;
+        .card-2-video {
+          aspect-ratio: 16 / 9;
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+          z-index: 1;
+        }
+        .close-button {
+          outline: none;
+          border: none;
+          background: none;
+          position: absolute;
+          right: 2rem;
+          top: 2rem;
+          z-index: 5;
+        }
+        .card-2-carousel {
+          margin-top: 2.5rem;
+        }
+        .carousel {
+          .carousel-indicators {
+            li {
+              opacity: 1;
+              background-color: #fff;
+              width: 1rem;
+              height: 1rem;
+              border-radius: 50%;
+            }
+            .active {
+              transition: 0.2s ease all;
+              background-color: $primary-color;
+            }
+          }
+          .pagination-arrow-prev {
+            transform: rotate(180deg);
+          }
+        }
+        .card-2-body {
+          padding: 4rem;
+          background-color: #fff;
+          .c2b-title {
+            margin: 0;
+            padding: 0;
+            font-size: 4rem;
+            font-weight: 800;
+            line-height: 120%;
+            color: $primary-color;
+          }
+          .c2b-hr {
+            margin: 4rem 0;
+            background-color: $primary-color;
+          }
+          .card-2-body-description {
+            font-size: 1.8rem;
+            line-height: 140%;
+            color: rgba($color: #000000, $alpha: 0.55);
+            padding-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+  .tc-learn-more-button {
+    outline: none;
+    border: none;
+    background: none;
+    text-decoration: underline;
+    color: #fff;
+    font-size: 1.8rem;
+    position: absolute;
+    bottom: 4rem;
+    left: 4rem;
+    z-index: 2;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .india-weekend {
+    .hero-section {
+      .hero-image {
+        aspect-ratio: 4/5;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+      .cover-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        aspect-ratio: 4/5;
+        z-index: 1; // Ensure the cover image is behind other content
+      }
+    }
+    .nma-section {
+      padding: 5rem 0;
+      .text-container {
+        padding: 2rem 1rem;
+        .text-row {
+          row-gap: 1.3rem;
+          padding: 0 0.8rem;
+        }
+      }
+    }
+    .nmacc-nw-video-section {
+      padding: 5rem 0;
+      .text-up {
+        left: 50%;
+        transform: translate(-50%);
+      }
+      .nmacc-nw-video-title {
+        text-align: center;
+      }
+    }
+    .tgib-section {
+      .text-up {
+        left: 50%;
+        transform: translate(-50%);
+      }
+      .tgib-title {
+        text-align: center;
+      }
+      .tgib-section-section-2 {
+        aspect-ratio: 3/4;
+        .festval-image-bg {
+          aspect-ratio: 3/4;
+        }
+        .text-container {
+          background: linear-gradient(
+            0deg,
+            $primary-color 0%,
+            $primary-color 0% 25%,
+            rgba($primary-color, 0) 50%
+          );
+          padding: 2.5rem;
+          .tc-title {
+            font-size: 2.4rem;
+          }
+          .tc-arrow-button {
+            margin-top: 2rem;
+          }
+        }
+      }
+      .tgib-section-section-3 {
+        aspect-ratio: 3/4;
+        .card-1 {
+          .festval-image-bg {
+            aspect-ratio: 3/4;
+          }
+          aspect-ratio: 3/4;
+
+          .text-container {
+            background: linear-gradient(
+              0deg,
+              $primary-color 0%,
+              $primary-color 0% 25%,
+              rgba($primary-color, 0) 50%
+            );
+            padding: 2.5rem 2.5rem 6rem 2.5rem;
+            .tc-title {
+              font-size: 2.4rem;
+            }
+            .tc-arrow-button {
+              margin-top: 2rem;
+            }
+          }
+        }
+        .card-2{
+          .close-button{
+            right: 1rem;
+            top: 1rem;
+          }
+          .card-2-body{
+            padding: 2rem;
+            .c2b-title{
+              font-size: 2.8rem;
+            }
+            .c2b-hr{
+              margin: 2rem 0;
+            }
+          }
+        }
+      }
+    }
+    .tc-learn-more-button {
+      bottom: 2rem;
+      left: 2.5rem;
     }
   }
 }

@@ -28,7 +28,7 @@ $font-size-title-16: 1rem; // 16px
 
 .india-weekend {
   .hero-section {
-    .video-mobile{
+    .video-mobile {
       display: none;
     }
     .hero-image {
@@ -52,7 +52,7 @@ $font-size-title-16: 1rem; // 16px
     background-color: $light-pink;
     padding: px-to-rem(100) 0;
     .nma-img-container {
-      background-color: rgba($color: $primary-color, $alpha: 0.50);
+      background-color: rgba($color: $primary-color, $alpha: 0.5);
       .nma-img {
         aspect-ratio: 1;
         height: auto;
@@ -339,7 +339,7 @@ $font-size-title-16: 1rem; // 16px
           margin-top: px-to-rem(25);
         }
         .carousel {
-          .carousel-image{
+          .carousel-image {
             width: 100%;
             height: auto;
             object-fit: cover;
@@ -374,7 +374,7 @@ $font-size-title-16: 1rem; // 16px
             color: $primary-color;
           }
           .c2b-hr {
-            margin: px-to-rem(20) 0;
+            margin: px-to-rem(20) 0 px-to-rem(10);
             background-color: $primary-color;
           }
           .card-2-body-description {
@@ -401,16 +401,14 @@ $font-size-title-16: 1rem; // 16px
   // }
 }
 
-
 @media screen and (max-width: 767px) {
   .india-weekend {
     .hero-section {
-      .video-desktop{
+      .video-desktop {
         display: none;
       }
-      .video-mobile{
+      .video-mobile {
         display: block;
-
       }
       .hero-image {
         aspect-ratio: 4/5;
@@ -517,10 +515,10 @@ $font-size-title-16: 1rem; // 16px
             }
           }
           .carousel {
-          .carousel-image{
-         
-            aspect-ratio: 3/4;
-          }}
+            .carousel-image {
+              aspect-ratio: 3/4;
+            }
+          }
         }
       }
     }

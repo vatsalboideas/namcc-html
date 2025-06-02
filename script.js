@@ -1,5 +1,11 @@
 $(document).ready(function () {
+
+
+
   // Configuration for all accordion items
+
+
+
   const accordionConfig = [
     { collapseId: '#collapseOne', cardClass: '.collapse-one' },
     { collapseId: '#collapseTwo', cardClass: '.collapse-two' },
@@ -109,7 +115,7 @@ $(document).ready(function () {
     }
 
     // Button click handler works on all devices
-    $card.find('[data-toggle="collapse"]').on('click', function (e) {
+    $card.find('[data-toggle="collapse"]').on('click', function () {
       if (isDesktop()) {
         clearTimeout(state.timeout);
         state.isHovering = false;
@@ -159,22 +165,14 @@ $(document).ready(function () {
       });
     }
   });
-});
 
-$(document).ready(function () {
-  const collapseId = '#collapseFive'; // example
-  const $card1 = $('.collapse-five'); // card-1
-  const $card2 = $('#collapseFive'); // card-2
 
-  // Show event
-  $(collapseId).on('show.bs.collapse', function () {
-    $card1.addClass('fading-out');
-    $card2.addClass('showing');
-  });
+  
+  
+  //schdule event hover effect
 
-  // Hide event
-  $(collapseId).on('hide.bs.collapse', function () {
-    $card1.removeClass('fading-out');
-    $card2.removeClass('showing');
-  });
+
+
+  
+
 });

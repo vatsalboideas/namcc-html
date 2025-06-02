@@ -28,11 +28,14 @@ $font-size-title-16: 1rem; // 16px
 
 .india-weekend {
   .hero-section {
+    .video-mobile{
+      display: none;
+    }
     .hero-image {
       aspect-ratio: 16 / 9;
       width: 100%;
       height: auto;
-      object-fit: cover;
+      // object-fit: cover;
     }
     .cover-image {
       position: absolute;
@@ -401,6 +404,13 @@ $font-size-title-16: 1rem; // 16px
 @media screen and (max-width: 767px) {
   .india-weekend {
     .hero-section {
+      .video-desktop{
+        display: none;
+      }
+      .video-mobile{
+        display: block;
+
+      }
       .hero-image {
         aspect-ratio: 4/5;
         width: 100%;

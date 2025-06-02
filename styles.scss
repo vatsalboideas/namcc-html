@@ -29,6 +29,7 @@ $font-size-title-16: 1rem; // 16px
 
 .india-weekend {
   .hero-section {
+    position: relative;
     .video-mobile {
       display: none;
     }
@@ -36,7 +37,8 @@ $font-size-title-16: 1rem; // 16px
       aspect-ratio: 16 / 9;
       width: 100%;
       height: auto;
-      // object-fit: cover;
+      object-fit: cover;
+      object-position: bottom;
     }
     .cover-image {
       position: absolute;
@@ -47,6 +49,25 @@ $font-size-title-16: 1rem; // 16px
       object-fit: cover;
       aspect-ratio: 16 / 9;
       z-index: 1; // Ensure the cover image is behind other content
+    }
+    .hero-button{
+      position: absolute;
+      bottom: px-to-rem(25);
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: $primary-color;
+      color: #fff;
+      font-size: px-to-rem(18);
+      padding: px-to-rem(10) px-to-rem(30);
+      text-decoration: none;
+      border-radius: 100px;
+      transition: background-color 0.3s ease;
+      border: none;
+      outline: none;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
     }
   }
   .nma-section {
@@ -629,6 +650,11 @@ $font-size-title-16: 1rem; // 16px
 @media screen and (max-width: 767px) {
   .india-weekend {
     .hero-section {
+      .hero-button{
+        font-size: px-to-rem(12);
+        padding: px-to-rem(8) px-to-rem(12);
+        bottom: px-to-rem(10);
+      }
       .video-desktop {
         display: none;
       }
@@ -636,7 +662,7 @@ $font-size-title-16: 1rem; // 16px
         display: block;
       }
       .hero-image {
-        aspect-ratio: 4/5;
+        aspect-ratio: 9/16;
         width: 100%;
         height: auto;
         object-fit: cover;

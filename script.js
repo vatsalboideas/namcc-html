@@ -12,6 +12,7 @@ $(document).ready(function () {
     { collapseId: '#collapseThree', cardClass: '.collapse-three' },
     { collapseId: '#collapseFour', cardClass: '.collapse-four' },
     { collapseId: '#collapseFive', cardClass: '.collapse-five' },
+    { collapseId: '#collapseSix', cardClass: '.collapse-six' },
   ];
 
   // Variables to track hover state for each card

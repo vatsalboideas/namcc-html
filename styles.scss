@@ -50,7 +50,7 @@ $font-size-title-16: 1rem; // 16px
       aspect-ratio: 16 / 9;
       z-index: 1; // Ensure the cover image is behind other content
     }
-    .hero-button{
+    .hero-button {
       position: absolute;
       bottom: px-to-rem(25);
       left: 50%;
@@ -557,6 +557,7 @@ $font-size-title-16: 1rem; // 16px
         }
       }
       .schedule-box {
+        transition: 0.5s ease all;
         padding: px-to-rem(60) px-to-rem(70);
         background-color: $light-pink;
         .schedule-info {
@@ -597,16 +598,16 @@ $font-size-title-16: 1rem; // 16px
               margin: 0;
             }
           }
-          .schedule-hover{
+          .schedule-hover {
             display: none;
             transition: 0.3s ease all;
           }
-          
-          .schedule-info-row{
+
+          .schedule-info-row {
             transition: 0.3s ease all;
             align-items: center;
           }
-          .show-button{
+          .show-button {
             outline: none;
             border: 1px solid $dark-pink;
             background-color: #fff;
@@ -615,7 +616,7 @@ $font-size-title-16: 1rem; // 16px
             font-size: px-to-rem(14);
             letter-spacing: 10%;
             line-height: 150%;
-            color: $dark-gray; 
+            color: $dark-gray;
             text-transform: uppercase;
             transition: 0.5s ease all;
             margin-right: px-to-rem(50);
@@ -628,16 +629,16 @@ $font-size-title-16: 1rem; // 16px
             border-bottom: 1px solid #c2c2c2;
           }
 
-          &:hover{
-          transition: 0.3s ease all;
+          &:hover {
+            transition: 0.3s ease all;
             background-color: #fff;
-            .schedule-default{
+            .schedule-default {
               display: none;
             }
-            .schedule-hover{
+            .schedule-hover {
               display: block;
             }
-            .schedule-info-row{
+            .schedule-info-row {
               align-items: flex-start;
             }
           }
@@ -650,7 +651,7 @@ $font-size-title-16: 1rem; // 16px
 @media screen and (max-width: 767px) {
   .india-weekend {
     .hero-section {
-      .hero-button{
+      .hero-button {
         font-size: px-to-rem(12);
         padding: px-to-rem(8) px-to-rem(12);
         bottom: px-to-rem(10);
@@ -773,24 +774,23 @@ $font-size-title-16: 1rem; // 16px
         }
       }
     }
-    .schedule-section{
-      .schedule-tabs{
-        .nav{
+    .schedule-section {
+      .schedule-tabs {
+        .nav {
           column-gap: px-to-rem(10);
           justify-content: space-between;
-          .nav-item{
+          .nav-item {
             width: 30%;
             &:first-child {
-             border-left: none;
+              border-left: none;
             }
             &:last-child {
-             border-right: none;
+              border-right: none;
             }
             .nav-link {
               padding: px-to-rem(10) px-to-rem(35);
               font-size: px-to-rem(14);
               text-align: center;
-              
             }
           }
         }
@@ -818,9 +818,9 @@ $font-size-title-16: 1rem; // 16px
               margin-right: 0;
               margin-top: px-to-rem(20);
             }
-            .schedule-info-row{
+            .schedule-info-row {
               align-items: flex-start;
-              .schedule-show-row{
+              .schedule-show-row {
                 padding-right: px-to-rem(10);
               }
             }

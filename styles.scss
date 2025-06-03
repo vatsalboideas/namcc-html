@@ -85,7 +85,7 @@ $font-size-title-16: 1rem; // 16px
     .text-container {
       height: 100%;
       background: #fff;
-      padding: 50px 0;
+      padding: px-to-rem(45) 0;
       position: relative;
       .text-row {
         row-gap: px-to-rem(25);
@@ -131,6 +131,23 @@ $font-size-title-16: 1rem; // 16px
           font-size: px-to-rem(18);
           line-height: 150%;
           font-style: italic;
+        }
+        .nma-link {
+          width: 100%;
+          display: inline-block;
+          margin: 0;
+          padding: 0;
+          font-size: px-to-rem(18);
+          line-height: 150%;
+          text-align: center;
+          color: $primary-color;
+          text-decoration: underline;
+          cursor: pointer;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: darken($primary-color, 10%);
+          }
         }
       }
     }
@@ -320,6 +337,17 @@ $font-size-title-16: 1rem; // 16px
           }
           .tc-arrow-button {
             margin-top: 1rem;
+            outline: none;
+            border: none;
+            background: none;
+          }
+          .tc-ctv {
+            margin-top: px-to-rem(20);
+            color: #fff;
+            font-size: px-to-rem(18);
+            text-decoration: underline;
+            cursor: pointer;
+
             outline: none;
             border: none;
             background: none;
@@ -646,6 +674,46 @@ $font-size-title-16: 1rem; // 16px
       }
     }
   }
+  .carousel-indicators {
+    li {
+      width: px-to-rem(10);
+      height: px-to-rem(10);
+      border-radius: 50%;
+      background-color: #fff;
+      opacity: 1;
+      &.active {
+        background-color: $dark-pink;
+        // opacity: 1;
+      }
+    }
+  }
+  .nma-modal{
+
+    .video-js {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  
+    /* Center play button */
+    .vjs-big-play-button {
+      top: 50% !important;
+      left: 50% !important;
+      transform: translate(-50%, -50%) !important;
+    }
+  }
+  .tgib-modal{
+    .video-js {
+      width: 100% !important;
+      height: 100% !important;
+    }
+
+    /* Center play button */
+    .vjs-big-play-button {
+      top: 50% !important;
+      left: 50% !important;
+      transform: translate(-50%, -50%) !important;
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -663,7 +731,8 @@ $font-size-title-16: 1rem; // 16px
         display: block;
       }
       .hero-image {
-        aspect-ratio: 9/16;
+        aspect-ratio: 4/5;
+
         width: 100%;
         height: auto;
         object-fit: cover;

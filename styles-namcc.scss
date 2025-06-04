@@ -451,9 +451,9 @@ $font-size-title-16: 1rem; // 16px
             background: none;
             transition: 0.3s all ease;
             position: relative;
-            span{
-                position: relative;
-                z-index: 2;
+            span {
+              position: relative;
+              z-index: 2;
             }
             &::before {
               content: '';
@@ -469,13 +469,12 @@ $font-size-title-16: 1rem; // 16px
             }
             &:hover {
               color: #fff;
-            //   background-color: #fff;
+              //   background-color: #fff;
               color: $dark-pink;
               &::before {
                 width: 100%;
               }
             }
-
           }
         }
       }

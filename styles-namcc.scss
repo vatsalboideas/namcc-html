@@ -28,16 +28,16 @@ $font-size-title-16: 1rem; // 16px
 }
 
 .india-weekend {
-    header{
-        .navbar{
-            height: 100px;
-            padding: 0;
-            img{
-                position: relative;
-                top: -20px;
-            }
-        }
+  header {
+    .navbar {
+      height: 100px;
+      padding: 0;
+      img {
+        position: relative;
+        top: -20px;
+      }
     }
+  }
   .hero-section {
     position: relative;
     .video-mobile {
@@ -961,18 +961,17 @@ $font-size-title-16: 1rem; // 16px
         border-width: 0 2px 2px 0;
         transform: rotate(45deg);
       }
-
     }
   }
-  .footer{
-    margin-top: px-to-rem(80, );
-      padding: px-to-rem(24) 0;
+  .footer {
+    margin-top: px-to-rem(80);
+    padding: px-to-rem(24) 0;
     background-color: #f2f2ed;
 
-    h2{
-        font-size: px-to-rem(14);
-        line-height: 1.7px;
-        font-weight: 400;
+    h2 {
+      font-size: px-to-rem(14);
+      line-height: 1.7px;
+      font-weight: 400;
     }
   }
 }
@@ -1016,6 +1015,16 @@ $font-size-title-16: 1rem; // 16px
         .text-row {
           row-gap: px-to-rem(13);
           padding: 0 px-to-rem(8);
+          .above-text-line {
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+          }
+          .nma-title {
+            margin-top: px-to-rem(20);
+            font-size: px-to-rem(26);
+            line-height: px-to-rem(24);
+          }
         }
       }
     }
@@ -1027,6 +1036,8 @@ $font-size-title-16: 1rem; // 16px
       }
       .nmacc-nw-video-title {
         text-align: center;
+        font-size: px-to-rem(22);
+        line-height: px-to-rem(26);
       }
       .nmacc-nw-video-mute-button {
         bottom: px-to-rem(35);
@@ -1035,12 +1046,18 @@ $font-size-title-16: 1rem; // 16px
       }
     }
     .tgib-section {
+        padding: px-to-rem(50) 0;
       .text-up {
         left: 50%;
         transform: translate(-50%);
       }
       .tgib-title {
         text-align: center;
+        font-size: px-to-rem(26);
+        line-height: px-to-rem(24);
+      }
+      .tgib-description{
+        margin-top: px-to-rem(10);
       }
       .tgib-section-section-2 {
         aspect-ratio: 3/4;
@@ -1164,6 +1181,44 @@ $font-size-title-16: 1rem; // 16px
             }
           }
         }
+      }
+    }
+    .faq-section {
+      .title {
+        font-size: px-to-rem(26);
+        line-height: 24px;
+      }
+      .faq-box {
+        .card {
+          .faq-button {
+            .card-header {
+              h2 {
+                font-size: px-to-rem(19);
+                font-weight: 500;
+              }
+            }
+          }
+          .card-body {
+            font-size: px-to-rem(12);
+            line-height: 22px;
+          }
+        }
+      }
+    }
+    .emailer {
+      .first-row {
+        .first-left-text {
+          font-size: 22px;
+          line-height: 26px;
+        }
+      }
+      .privacy-text {
+        font-size: 12px;
+      }
+    }
+    footer {
+      h2 {
+        font-size: 12px;
       }
     }
     // .tc-learn-more-button {

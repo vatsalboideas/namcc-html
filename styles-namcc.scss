@@ -182,9 +182,28 @@ $font-size-title-16: 1rem; // 16px
     line-height: px-to-rem(12);
     letter-spacing: px-to-rem(2);
     background: #fff;
+    position: relative;
+    span {
+      z-index: 2;
+      position: relative;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 0%;
+      height: 100%;
+      background-color: rgb(197, 41, 155);
+      z-index: 0;
+      transition: width 0.4s ease;
+      z-index: 1;
+    }
     &:hover {
       color: #fff;
-      background-color: $dark-pink;
+      &::before {
+        width: 100%;
+      }
     }
   }
   .nmacc-nw-video-section {
@@ -421,13 +440,42 @@ $font-size-title-16: 1rem; // 16px
           .tc-ctv {
             margin-top: px-to-rem(20);
             color: #fff;
-            font-size: px-to-rem(18);
-            text-decoration: underline;
+            font-size: px-to-rem(14);
+            padding: px-to-rem(5) px-to-rem(15);
+            // text-decoration: underline;
+            border: 2px solid#fff;
             cursor: pointer;
 
             outline: none;
-            border: none;
+            // border: none;
             background: none;
+            transition: 0.3s all ease;
+            position: relative;
+            span{
+                position: relative;
+                z-index: 2;
+            }
+            &::before {
+              content: '';
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 0%;
+              height: 100%;
+              background-color: #fff;
+              z-index: 0;
+              transition: width 0.4s ease;
+              z-index: 1;
+            }
+            &:hover {
+              color: #fff;
+            //   background-color: #fff;
+              color: $dark-pink;
+              &::before {
+                width: 100%;
+              }
+            }
+
           }
         }
       }
@@ -1046,7 +1094,7 @@ $font-size-title-16: 1rem; // 16px
       }
     }
     .tgib-section {
-        padding: px-to-rem(50) 0;
+      padding: px-to-rem(50) 0;
       .text-up {
         left: 50%;
         transform: translate(-50%);
@@ -1056,7 +1104,7 @@ $font-size-title-16: 1rem; // 16px
         font-size: px-to-rem(26);
         line-height: px-to-rem(24);
       }
-      .tgib-description{
+      .tgib-description {
         margin-top: px-to-rem(10);
       }
       .tgib-section-section-2 {
